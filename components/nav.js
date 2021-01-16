@@ -8,12 +8,12 @@ const links = [
 
 export default function Nav() {
   return (
-    <nav>
+    <nav className="invisible md:visible">
       <ul className="flex items-center justify-between p-16">
         <li>
-          <img src="public/work_logo.svg"></img>
+
         </li>
-        <ul className="flex items-center justify-between space-x-36">
+        <ul className="flex items-center justify-between space-x-0 md:space-x-36  ">
           {links.map(({ href, label }) => (
             <li key={`${href}${label}`}>
               <a href={href} className="transition no-underline font-medium hover:text-gray-500">
