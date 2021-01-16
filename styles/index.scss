@@ -1,0 +1,41 @@
+@import "tailwindcss/base";
+
+
+/* Write your own custom base styles here */
+
+// * Fonts
+
+@font-face {
+  font-family:'Metropolis';
+  src:url('./fonts/Metropolis-Regular.woff');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+  font-family: 'Manrope';  
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Metropolis';
+}
+
+/* Start purging... */
+@import "tailwindcss/components";
+/* Stop purging. */
+
+html,
+body {
+  @apply bg-gray-50 dark:bg-gray-900;
+}
+
+/* Write your own custom component styles here */
+.btn-blue {
+  @apply px-4 py-2 font-bold text-white bg-blue-500 rounded;
+}
+
+/* Start purging... */
+@import "tailwindcss/utilities";
+/* Stop purging. */
+
+/* Your own custom utilities */
