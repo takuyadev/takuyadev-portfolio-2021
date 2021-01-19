@@ -2,9 +2,7 @@ import styled, { css } from "styled-components";
 
 const Circle = styled.div`
   position: relative;
-  width: 400px;
-  height: 400px;
-  border: 3px solid rgba(0,0,0, .1);
+  border: 3px solid rgba(0, 0, 0, 0.1);
   border-radius: 100%;
   &::after {
     position: absolute;
@@ -20,6 +18,12 @@ const Circle = styled.div`
   }
 `;
 
-export default function GradientCircle() {
-  return <Circle className="flex justify-center items-center"></Circle>;
+export default function GradientCircle({children}) {
+  return (
+
+      <Circle className="flex flex-col justify-center items-center z-0 w-72 h-72 md:w-96 md:h-96 ">
+        {children}
+      </Circle>
+
+  );
 }
