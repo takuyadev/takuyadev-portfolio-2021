@@ -102,8 +102,10 @@ function Home() {
       </section>
       <section className="flex flex-col items-center justify-center w-full">
         <Wave text="projects" />
-        <div className="flex flex-col w-full relative bottom-24 md:flex-row z-10 md:bottom-96">
+        <div className="flex flex-col items-center justify-center w-full relative bottom-24 z-10 md:bottom-96">
           <ProjectCard className="z-10"></ProjectCard>
+          <ProjectCard className="z-10"></ProjectCard>
+          <ProjectCard className="z-10 "></ProjectCard>
         </div>
       </section>
     </main>
