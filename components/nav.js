@@ -10,7 +10,7 @@ export default function Nav() {
   return (
     <nav className="invisible lg:visible">
       <ul className="flex items-center justify-between p-12">
-        <li>
+        <li className="rounded-full bg-white p-4">
           <a href="/">
             <img className="w-24" src="/work_logo.svg" />
           </a>
@@ -20,7 +20,7 @@ export default function Nav() {
             <li key={`${href}${label}`}>
               <a
                 href={href}
-                className="transition no-underline font-medium hover:text-gray-500 tracking-widest"
+                className="transition no-underline font-medium hover:text-gray-500 tracking-widest dark:text-white"
               >
                 {label}
               </a>

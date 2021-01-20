@@ -22,10 +22,10 @@ function Home() {
       </div>
       <div className="flex items-center justify-center p-16">
         <GradientCircle>
-          <h1 className="w-screen text-center text-5xl z-10 font-bold leading-normal tracking-widest">
+          <h1 className="w-screen text-center text-5xl z-10 font-bold leading-normal tracking-widest dark:text-white">
             takuya toyokawa
           </h1>
-          <h1 className="w-screen text-center text-5xl z-10 tracking-widest text-gray-500">
+          <h1 className="w-screen text-center text-5xl z-10 tracking-widest text-gray-200">
             front end developer
           </h1>
         </GradientCircle>
@@ -49,10 +49,10 @@ function Home() {
         <div className="line bg-gray-100" />
       </div>
       <section className="flex flex-col items-center justify-center text-center p-16 md:p-32">
-        <h1 className="text-2xl font-bold tracking-wider my-8">
+        <h1 className="text-2xl font-bold tracking-wider my-8 dark:text-white">
           Hi, my name is Taku.
         </h1>
-        <p className="text-m tracking-wider w-4/5 leading-loose md:w-2/4">
+        <p className="text-m tracking-wider w-4/5 leading-loose md:w-2/4 dark:text-white">
           I’m a passionate front-end developer with strong UI/UX background.
           Bringing my strengths in both clean code and design, I hope to be able
           to be working with passionates alike!
