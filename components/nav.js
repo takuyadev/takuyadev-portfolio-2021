@@ -1,21 +1,21 @@
 import Link from "next/link";
 
 const links = [
-  { href: "https://github.com/vercel/next.js", label: "about" },
-  { href: "https://github.com/vercel/next.js", label: "technology" },
-  { href: "https://github.com/vercel/next.js", label: "project" },
+  { href: "#about", label: "about" },
+  { href: "#technology", label: "technology" },
+  { href: "#projects", label: "projects" },
 ];
 
 export default function Nav() {
   return (
-    <nav className="invisible lg:visible">
+    <nav >
       <ul className="flex items-center justify-between p-12">
-        <li className="rounded-full bg-white p-4">
+        <li className="rounded-full  bg-white p-4 ">
           <a href="/">
-            <img className="w-24" src="/work_logo.svg" />
+            <img className="w-16 transition hover:scale-50" src="/work_logo.svg" />
           </a>
         </li>
-        <ul className="flex flex-col  items-center justify-between space-x-0 md:space-x-36 md:flex-row">
+        <ul className="flex flex-col items-center justify-between invisible space-x-0 lg:space-x-36 lg:flex-row lg:visible">
           {links.map(({ href, label }) => (
             <li key={`${href}${label}`}>
               <a
@@ -27,10 +27,11 @@ export default function Nav() {
             </li>
           ))}
           <li>
-            <a className="no-underline btn-blue rounded-full">contact</a>
+            <a href="#contact" className="no-underline btn-blue rounded-full transition pointer-cursor hover:bg-blue-700">contact</a>
           </li>
         </ul>
       </ul>
     </nav>
   );
 }
+

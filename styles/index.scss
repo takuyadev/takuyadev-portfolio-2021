@@ -12,6 +12,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 *{
   font-family: 'Manrope';  
 }
@@ -28,6 +32,7 @@ h1, h2, h3, h4, h5, h6{
 .wave{
   background-image: url('../public/wave.svg');
 }
+
 
 /*Animation*/
 
@@ -50,6 +55,7 @@ h1, h2, h3, h4, h5, h6{
   left: 50%;
   animation: animate 15s linear infinite;
 }
+
 .box div:nth-child(3) {
   left: 6%;
   top: 36%;
