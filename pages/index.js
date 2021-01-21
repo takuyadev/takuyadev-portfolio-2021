@@ -5,7 +5,9 @@ import Card from "../components/card.js";
 import ProjectCard from "../components/projectCard.js";
 
 function Home() {
+ 
   return (
+    
     <main className="w-screen ">
       <Nav />
       <div className="box">
@@ -73,10 +75,10 @@ function Home() {
             <p className="m-2">HTML</p>
             <p className="m-2">CSS+SASS</p>
             <p className="m-2">JS</p>
+            <p className="m-2">WordPress</p>
             <p className="m-2">React.js</p>
             <p className="m-2">Storybook</p>
             <p className="m-2">Next.js</p>
-            <p className="m-2">Styled Components</p>
           </Card>
           <Card className="z-10 w-full">
             <img src="design.svg" className="w-12 mx-auto "></img>
@@ -118,9 +120,26 @@ function Home() {
             title="CookOff!"
             team={`Takuya Toyokawa (Lead Front-end Developer / Project Manager) \nAmina Ashour (UI/UX Designer) \nDmitry Matiouchenko (Full-Stack Developer) \nSimon Le (UI/UX Designer)`}
             desc="Our team created an web application for users trying to be able to cook together, not only to bring the joy of cooking together online, but improve upon what could be done with the concept of cooking food together. Using React.js and Strappi, we were able to build an application that allows users to share recipes, create events, and host their online events. "
+            link="https://cookoff.live/profile"
           ></ProjectCard>
-          <ProjectCard className="z-10"></ProjectCard>
-          <ProjectCard className="z-10 "></ProjectCard>
+            <ProjectCard
+              className="z-10"
+              img="project_3.png"
+              role="lead front-end developer / UX/UI designer"
+              title="Logee"
+              team={`Takuya Toyokawa (Lead Front-end Developer / UI/UX Designer) \nEmma Parsons (UI/UX Designer / Front-end Developer) \nSimon Le (UI/UX Designer / Front-end Developer / Illustrator)`}
+              desc="Our team was tasked to create an application was to not only teach users what inductive and deductive reasoning was, but also to the age demographic of 8-12. Since it was a younger demographic, we had to make it welcoming for younger kids with attracting visuals. This web application was created using HTML/CSS/JS."
+              link="https://takuyaktoyokawa.github.io/logeee/"
+            ></ProjectCard>
+          <ProjectCard
+            className="z-10"
+            img="project_2.png"
+            role="lead front-end developer / UX/UI designer"
+            title="Shelfie"
+            team={`Takuya Toyokawa (Lead Front-end Developer / UI/UX Designer) \nEmma Parsons (UI/UX Designer / Front-end Developer) \nSimon Le (UI/UX Designer / Front-end Developer)`}
+            desc="Our team was tasked to create an application based on real-world problems based on the environment. Our of creating an application to tell the expiration date of food came from the concept that many people waste food just because they don't know when common food expires. Using React.js, we were able to successfully develop the application."
+            link="https://shelfie.vercel.app/Homepage"
+          ></ProjectCard>{" "}
           <p className="text-black dark:text-white">
             more projects soon to be posted.
           </p>
@@ -128,13 +147,25 @@ function Home() {
       </section>
       <section
         id="contact"
-        className="flex flex-col  items-center justify-center h-48 w-full text-center bg-gray-200 dark:bg-white z-10"
+        className="flex flex-col  items-center justify-center h-48 w-full text-center z-10 border-t-2 border-b-2 border-gray-200"
       >
         <h1 className=" font-extrabold text-5xl mb-6 md:mb-12">Contact</h1>
         <div className="flex flex-col md:flex-row md:space-x-12 ">
-          <a className="transition text-blue-700 hover:text-blue-500" href="https://www.linkedin.com/in/takuya-toyokawa-908795149/">LinkedIn</a>
-          <a className="transition text-blue-700 hover:text-blue-500">Takuya.K.Toyokawa@gmail.com</a>
-          <a className="transition text-blue-700 hover:text-blue-500" href="https://github.com/TakuyaKToyokawa">GitHub</a>
+          <a
+            className="transition text-blue-700 hover:text-blue-500"
+            href="https://www.linkedin.com/in/takuya-toyokawa-908795149/"
+          >
+            LinkedIn
+          </a>
+          <a className="transition text-blue-700 hover:text-blue-500">
+            Takuya.K.Toyokawa@gmail.com
+          </a>
+          <a
+            className="transition text-blue-700 hover:text-blue-500"
+            href="https://github.com/TakuyaKToyokawa"
+          >
+            GitHub
+          </a>
         </div>
       </section>
     </main>

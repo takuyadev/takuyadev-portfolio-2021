@@ -1,3 +1,4 @@
+
 import styled, { css } from "styled-components";
 import Card from "../components/card";
 
@@ -13,6 +14,8 @@ export default function GradientCircle({
   desc,
   img,
   team,
+  link,
+  link2
 }) {
   return (
     <Card>
@@ -27,10 +30,11 @@ export default function GradientCircle({
           </p>
           <a
             className="btn-blue rounded-full w-full text-center transition hover:bg-blue-700"
-            href="https://cookoff.live"
+            href={link}
           >
             View Site
           </a>
+          {}
         </div>
         <Image
           className="h-96 w-full ml-0 bg-contain bg-no-repeat bg-center rounded-2xl transition shadow-md border-indigo-200 border-4 mb-6 shover:translate-y-3 lg:ml-6 lg:w-1/2 lg: m-0"
