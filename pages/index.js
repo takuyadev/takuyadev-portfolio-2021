@@ -3,12 +3,14 @@ import GradientCircle from "../components/gradientCircle.js";
 import Wave from "../components/wave.js";
 import Card from "../components/card.js";
 import ProjectCard from "../components/projectCard.js";
+import Head from "next/head";
 
 function Home() {
- 
   return (
-    
     <main className="w-screen ">
+      <Head>
+        <link rel="shortcut icon" href="/static/favicon.ico" />
+      </Head>
       <Nav />
       <div className="box">
         <div></div>
@@ -122,15 +124,15 @@ function Home() {
             desc="Our team created an web application for users trying to be able to cook together, not only to bring the joy of cooking together online, but improve upon what could be done with the concept of cooking food together. Using React.js and Strappi, we were able to build an application that allows users to share recipes, create events, and host their online events. "
             link="https://cookoff.live/profile"
           ></ProjectCard>
-            <ProjectCard
-              className="z-10"
-              img="project_3.png"
-              role="lead front-end developer / UX/UI designer"
-              title="Logee"
-              team={`Takuya Toyokawa (Lead Front-end Developer / UI/UX Designer) \nEmma Parsons (UI/UX Designer / Front-end Developer) \nSimon Le (UI/UX Designer / Front-end Developer / Illustrator)`}
-              desc="Our team was tasked to create an application was to not only teach users what inductive and deductive reasoning was, but also to the age demographic of 8-12. Since it was a younger demographic, we had to make it welcoming for younger kids with attracting visuals. This web application was created using HTML/CSS/JS."
-              link="https://takuyaktoyokawa.github.io/logeee/"
-            ></ProjectCard>
+          <ProjectCard
+            className="z-10"
+            img="project_3.png"
+            role="lead front-end developer / UX/UI designer"
+            title="Logee"
+            team={`Takuya Toyokawa (Lead Front-end Developer / UI/UX Designer) \nEmma Parsons (UI/UX Designer / Front-end Developer) \nSimon Le (UI/UX Designer / Front-end Developer / Illustrator)`}
+            desc="Our team was tasked to create an application was to not only teach users what inductive and deductive reasoning was, but also to the age demographic of 8-12. Since it was a younger demographic, we had to make it welcoming for younger kids with attracting visuals. This web application was created using HTML/CSS/JS."
+            link="https://takuyaktoyokawa.github.io/logeee/"
+          ></ProjectCard>
           <ProjectCard
             className="z-10"
             img="project_2.png"
