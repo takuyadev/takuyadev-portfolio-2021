@@ -144,7 +144,7 @@ function Home() {
             role="lead front-end developer / UX/UI designer"
             title="Shelfie"
             team={`Takuya Toyokawa (Lead Front-end Developer / UI/UX Designer) \nEmma Parsons (UI/UX Designer / Front-end Developer) \nSimon Le (UI/UX Designer / Front-end Developer)`}
-            desc="Our team was tasked to create an application based on real-world problems based on the environment. Our of creating an application to tell the expiration date of food came from the concept that many people waste food just because they don't know when common food expires. Using React.js, we were able to successfully develop the application."
+            desc="Our team was tasked to create an application based on real-world problems based on the environment. Our idea of creating an application to tell the expiration date of food came from the concept that many people waste food just because they don't know when common food expires. Using React.js, we were able to successfully develop the application."
             link="https://shelfie.vercel.app/Homepage"
           ></ProjectCard>{" "}
           <p className="text-black dark:text-white">
