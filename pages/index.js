@@ -9,7 +9,12 @@ function Home() {
   return (
     <main className="w-screen ">
       <Head>
+        <title>Takuya Toyokawa</title>
         <link rel="shortcut icon" href="/static/favicon.ico" />
+        <meta
+          name="description"
+          content="Takuya Toyokawa's Front-end Developer's portfolio based in Canada"
+        ></meta>
       </Head>
       <Nav />
       <div className="box">
