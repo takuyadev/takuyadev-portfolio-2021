@@ -16,7 +16,7 @@ export default function Nav() {
           <a href="/">
             <img
               className="w-16 transition hover:scale-50"
-              src="/work_logo.svg"
+              src="/logo.png"
             />
           </a>
         </li>

@@ -77,7 +77,7 @@ function Home() {
         <Wave text="technology" />
         <div className="flex flex-col justify-center items-center bottom-24 w-full relative md:bottom-56 lg:flex-row z-10 text-center lg:bottom-96">
           <Card className="z-10 w-full">
-            <img src="code.svg" className="w-12 mx-auto "></img>
+            <img src="icons/code.png" className="w-12 mx-auto "></img>
             <h1 className="font-extrabold my-6 text-xl">Front-end</h1>
             <p className="m-2">HTML</p>
             <p className="m-2">CSS+SASS</p>
@@ -88,7 +88,7 @@ function Home() {
             <p className="m-2">Next.js</p>
           </Card>
           <Card className="z-10 w-full">
-            <img src="design.svg" className="w-12 mx-auto "></img>
+            <img src="icons/design.png" className="w-12 mx-auto "></img>
             <h1 className="font-extrabold my-6 text-xl">UI/UX Design</h1>
             <p className="m-2">Figma</p>
             <p className="m-2">Invision</p>
@@ -126,7 +126,7 @@ function Home() {
             role="lead front-end developer / project manager"
             title="CookOff!"
             team={`Takuya Toyokawa (Lead Front-end Developer / Project Manager) \nAmina Ashour (UI/UX Designer) \nDmitry Matiouchenko (Full-Stack Developer) \nSimon Le (UI/UX Designer)`}
-            desc="Our team created an web application for users trying to be able to cook together, not only to bring the joy of cooking together online, but improve upon what could be done with the concept of cooking food together. Using React.js and Strappi, we were able to build an application that allows users to share recipes, create events, and host their online events. "
+            desc="Our team created an web application for users trying to be able to cook together, not only to bring the joy of cooking together online, but improve upon what could be done with the concept of cooking food together. Using React.js and Strappi, we were able to build an application that allows users to share recipes, create events, and host their online events."
             link="https://cookoff.live/profile"
           ></ProjectCard>
           <ProjectCard
