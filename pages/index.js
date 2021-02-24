@@ -5,7 +5,7 @@ import Card from "../components/card.js";
 import ProjectCard from "../components/projectCard.js";
 import Head from "next/head";
 
-export default function Home() {
+function Home() {
   return (
     <main className="w-screen ">
       <Head>
