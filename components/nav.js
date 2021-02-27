@@ -9,14 +9,6 @@ const links = [
   { href: "/#otherwork", label: "other work" },
 ];
 
-// const SideMenu = styled.div`
-// width:75%;
-//   display: ${(props) => (props.display ? props.display : "block")};
-//   @media (max-width: 768px) {
-//     display: ${(props) => (props.display ? props.display : "none")};
-//   }
-// `;
-
 const SideMenu = styled.ul`
   display: ${(props) => (props.display ? props.display : "flex")};
   position: relative;
