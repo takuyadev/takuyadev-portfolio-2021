@@ -1,4 +1,6 @@
-import { motion } from "framer-motion";
+import React from "react";
+import { render } from "react-dom";
+import { LiteYouTubeEmbed } from "react-lite-youtube-embed";
 import Nav from "../components/Nav.js";
 import Footer from "../components/Footer";
 import GradientCircle from "../components/GradientCircle.js";
@@ -13,12 +15,12 @@ import BackgroundAnimation from "../components/BackgroundAnimation";
 import BackUp from "../components/BackUp";
 
 function Home() {
-
   return (
     <main className="w-screen ">
       <Head>
         <title>Takuya Toyokawa</title>
         <link rel="shortcut icon" href="/static/favicon.ico" />
+        <link rel="preload" />
         <meta
           name="description"
           content="Takuya Toyokawa's Front-end Developer's portfolio based in Canada"
@@ -32,7 +34,7 @@ function Home() {
           <h1 className="w-screen text-center text-3xl md:mb-4 md:text-5xl z-10 font-bold leading-normal tracking-widest dark:text-white">
             takuya toyokawa
           </h1>
-          <h1 className="w-screen text-center text-3xl md:text-5xl z-10 tracking-widest text-gray-700 dark:text-gray-200">
+          <h1 className="w-screen text-center text-3xl md:text-5xl z-10 tracking-widest text-gray-700 ">
             front end developer + UX/UI
           </h1>
         </GradientCircle>
@@ -142,7 +144,6 @@ function Home() {
               href="https://takuyaktoyokawa.github.io/sushimestyleguide/"
             />
           </div>
-
         </div>
       </section>
 
@@ -182,7 +183,11 @@ function Home() {
                 src="https://www.youtube-nocookie.com/embed/videoseries?list=PLoMwq4kX_LkqNAZHpyNHHgr8gzA2nkADp&rel=0"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowfullscreen="allowfullscreen"
+                mozallowfullscreen="mozallowfullscreen"
+                msallowfullscreen="msallowfullscreen"
+                oallowfullscreen="oallowfullscreen"
+                webkitallowfullscreen="webkitallowfullscreen"
               ></iframe>
             </div>
           </Card>
@@ -205,23 +210,18 @@ function Home() {
                   Audition.
                 </p>
               </div>
-              <iframe
-                width="full"
-                height="400"
-                className="flex-1 rounded-xl"
-                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLoMwq4kX_LkrymCC54rcJRKylzXRsMUu8&rel=0"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
+              <LiteYouTubeEmbed
+                id="L2vS_050c-M"
+                title="What’s new in Material Design for the web (Chrome Dev Summit 2019)"
+              />
             </div>
           </Card>
           <div className="w-3/4 lg:w-1/2 h-96">
-            <h1 className="font-extrabold text-3xl tracking-widest text-gray-700 mb-3 text-center ">
+            <h1 className="font-extrabold text-3xl tracking-widest text-gray-700 mb-3 text-center  dark:text-gray-200">
               Illustrator
             </h1>
             <Image height="600px" img="illustrator.jpg" />
-            <h1 className="font-extrabold text-3xl tracking-widest text-gray-700 mb-3  text-center">
+            <h1 className="font-extrabold text-3xl tracking-widest text-gray-700 mb-3 text-center dark:text-gray-200">
               Photoshop
             </h1>
             <Image height="800px" img="photoshop.jpg" />
