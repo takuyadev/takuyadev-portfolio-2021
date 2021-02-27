@@ -55,7 +55,7 @@ export default function Nav() {
   };
 
   return (
-    <nav className="m-8">
+    <nav id="top" className="m-8">
       <ul className="flex flex-wrap flex-col lg:flex-row items-center justify-between md:h-auto ">
         <li className="rounded-full mb-6 bg-white p-4 lg:m-0 ">
           <a href="/">
