@@ -31,6 +31,9 @@ const SideMenu = styled.ul`
     justify-content: space-evenly;
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
       var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    @media (prefers-color-scheme: dark) {
+      background-color: rgba(17, 24, 39, 1);
+    }
   }
 `;
 
@@ -50,8 +53,8 @@ export default function Nav() {
 
   return (
     <nav className="m-8">
-      <ul className="flex flex-wrap flex-col lg:flex-row items-center justify-between md:h-auto">
-        <li className="rounded-full mb-6 bg-white p-4 lg:m-0">
+      <ul className="flex flex-wrap flex-col lg:flex-row items-center justify-between md:h-auto bg-gray-900">
+        <li className="rounded-full mb-6 bg-white p-4 lg:m-0 ">
           <a href="/">
             <img
               className="w-16 h-16transition hover:scale-50"

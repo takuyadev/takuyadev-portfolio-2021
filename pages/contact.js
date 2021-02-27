@@ -18,6 +18,7 @@ function Home() {
       <Head>
         <title>Takuya Toyokawa</title>
         <link rel="shortcut icon" href="/static/favicon.ico" />
+        <link rel="preload"/>
         <meta
           name="description"
           content="Takuya Toyokawa's Front-end Developer's portfolio based in Canada"

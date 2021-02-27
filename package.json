@@ -11,6 +11,7 @@
     "next": "latest",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-lite-youtube-embed": "^0.4.3",
     "sass": "^1.32.4",
     "styled-components": "^5.2.1"
   },

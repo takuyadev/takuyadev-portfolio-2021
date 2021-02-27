@@ -1,44 +1,48 @@
 @import "tailwindcss/base";
-
+@import "./LiteYouTubeEmbed.css";
 
 /* Write your own custom base styles here */
 
 // * Fonts
 
 @font-face {
-  font-family:'Metropolis';
-  src:url('./fonts/Metropolis-Regular.woff');
-  font-display:swap;
+  font-family: "Metropolis";
+  src: url("./fonts/Metropolis-Regular.woff");
+  font-display: swap;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 
 html {
   scroll-behavior: smooth;
 }
 
-*{
-  font-family: 'Manrope';  
+* {
+  font-family: "Manrope";
 }
 
-main{
+main {
   opacity: 1;
   animation: load 1s ease-in-out;
 }
 
-.line{
+.line {
   height: 2px;
   width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6{
-  font-family: 'Metropolis';
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Metropolis";
 }
 
-.wave{
-  background-image: url('../public/wave.svg');
+.wave {
+  background-image: url("../public/wave.svg");
 }
-
 
 /*Animation*/
 
@@ -47,7 +51,7 @@ h1, h2, h3, h4, h5, h6{
   width: 60px;
   border-radius: 50%;
   height: 60px;
-  border: 5px solid #CCCCFF;
+  border: 5px solid #ccccff;
 }
 
 .box div:nth-child(1) {

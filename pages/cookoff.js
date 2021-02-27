@@ -13,6 +13,7 @@ function CookOff() {
       <Head>
         <title>Takuya Toyokawa</title>
         <link rel="shortcut icon" href="/static/favicon.ico" />
+        <link rel="preload"/>
         <meta
           name="description"
           content="Takuya Toyokawa's Front-end Developer's portfolio based in Canada"
@@ -24,15 +25,15 @@ function CookOff() {
       <div className="flex flex-col items-center justify-center p-16">
         <img className="h-96 w-auto mb-24 " src="project_1.png" />
         <section className="flex flex-col w-full lg:w-3/4 ">
-          <h1 className="font-extrabold text-3xl tracking-widest text-gray-700 mb-3 ">
+          <h1 className="font-extrabold text-3xl tracking-widest text-gray-700 mb-3 dark:text-gray-200">
             CookOff!
           </h1>
           <div className="flex flex-col lg:flex-row">
             <div className="flex flex-col lg:mr-12 mb-12 flex-1 ">
-              <h2 className="font-extrabold text-xl tracking-widest text-gray-600 mb-3">
+              <h2 className="font-extrabold text-xl tracking-widest text-gray-600 mb-3 dark:text-gray-300">
                 summary
               </h2>
-              <p className="text-gray-500 leading-loose tracking-wide mb-6">
+              <p className="dark:text-gray-300 leading-loose tracking-wide mb-6">
                 In 2020, the pandemic hit the world that halted all social
                 interactions between people. One of the activities that were
                 stopped as a result is cooking together with people and friends
@@ -50,20 +51,20 @@ function CookOff() {
               </a>
             </div>
             <div className="flex flex-col flex-1 ">
-              <h2 className="font-extrabold text-xl tracking-widest text-gray-600 mb-3">
+              <h2 className="font-extrabold text-xl tracking-widest text-gray-600 mb-3 dark:text-gray-300">
                 team
               </h2>
-              <p className="text-gray-500 leading-loose tracking-wide mb-12">
+              <p className="text-gray-500 leading-loose tracking-wide mb-12 dark:text-gray-300">
                 Takuya Toyokawa (Lead Front-end Developer / Project Manager){" "}
                 <br />
                 Amina Ashour (UI/UX Designer) <br />
                 Dmitry Matiouchenko (Full-Stack Developer) <br /> Simon Le
                 (UI/UX Designer)
               </p>
-              <h2 className="font-extrabold text-xl tracking-widest text-gray-600 mb-3">
+              <h2 className="font-extrabold text-xl tracking-widest text-gray-600 mb-3 dark:text-gray-300">
                 tools
               </h2>
-              <p className="text-gray-500 leading-loose tracking-wide mb-3">
+              <p className="text-gray-500 leading-loose tracking-wide mb-3 dark:text-gray-300">
                 Github, React.js w/Next.js + Framer Motion + Styled Components +
                 Storybook + AXIOS, WordPress, Strappi, Figma, Trello
               </p>
@@ -76,10 +77,10 @@ function CookOff() {
             <Image bgPosition="left" img="cookoff/problem.jpg"></Image>
           </div>
           <div className="flex flex-col flex-1 lg:ml-12">
-            <h1 className="font-extrabold text-3xl tracking-widest text-gray-700 mb-3 ">
+            <h1 className="font-extrabold text-3xl tracking-widest text-gray-700 mb-3 dark:text-gray-300">
               problem
             </h1>
-            <p className="text-gray-500 leading-loose tracking-wide mb-3">
+            <p className="text-gray-500 leading-loose tracking-wide mb-3 dark:text-gray-300">
               The problem that we found with traditional cooking parties is that
               mainly they are <b>hard to organize,</b> especially online.{" "}
               <b>Many people have busy schedules,</b> and sometimes schedules
@@ -94,11 +95,11 @@ function CookOff() {
           </div>
         </section>
         <Divider />
-        <section className="flex flex-col justify-center items-center text-center lg:space-x-12 w-full lg:w-3/4 ">
-          <h1 className="font-extrabold text-3xl tracking-widest text-gray-700 mb-3 ">
+        <section className="flex flex-col justify-center items-center text-center lg:space-x-12 w-full lg:w-3/4 dark:text-gray-300">
+          <h1 className="font-extrabold text-3xl tracking-widest text-gray-700 mb-3 dark:text-gray-300">
             solution
           </h1>
-          <p className="text-gray-500 leading-loose tracking-wide mb-3">
+          <p className="text-gray-500 leading-loose tracking-wide mb-3 dark:text-gray-300">
             To make an application that allows users to be able to{" "}
             <b>
               cook together through streaming platforms to increase the
@@ -107,12 +108,12 @@ function CookOff() {
           </p>
         </section>
         <Divider />
-        <section className="flex flex-col-reverse lg:space-x-12 lg:flex-row w-full lg:w-3/4 ">
+        <section className="flex flex-col-reverse lg:space-x-12 lg:flex-row w-full lg:w-3/4 dark:text-gray-300">
           <div className="flex flex-col flex-1 mr-12">
-            <h1 className="font-extrabold text-3xl tracking-widest text-gray-700 mb-3 ">
+            <h1 className="font-extrabold text-3xl tracking-widest text-gray-700 mb-3 dark:text-gray-300">
               user research
             </h1>
-            <p className="text-gray-500 leading-loose tracking-wide mb-3">
+            <p className="text-gray-500 leading-loose tracking-wide mb-3 dark:text-gray-300">
               Our team researched our main demographic of people who enjoy
               cooking, but also research on users who create content for
               social-eating. Using what we researched through asking users, we
@@ -134,10 +135,10 @@ function CookOff() {
         <Divider />
 
         <section className="flex flex-col justify-center items-center text-center lg:space-x-12 w-full lg:w-3/4 ">
-          <h1 className="font-extrabold text-3xl tracking-widest text-gray-700 mb-3 ">
+          <h1 className="font-extrabold text-3xl tracking-widest text-gray-700 mb-3 dark:text-gray-300">
             features and differentiation
           </h1>
-          <p className="text-gray-500 leading-loose tracking-wide mb-3">
+          <p className="text-gray-500 leading-loose tracking-wide mb-3 dark:text-gray-300">
             To differentiate ourselves from traditional video sharing
             applications, our application is a{" "}
             <b>
@@ -157,15 +158,15 @@ function CookOff() {
         <section className="flex flex-col w-full lg:w-3/4 lg:flex-col">
           <Image img="cookoff/design.jpg"></Image>
           <div className="flex flex-col flex-1 mt-12 ">
-            <h1 className="font-extrabold text-3xl tracking-widest text-gray-700 mb-3 ">
+            <h1 className="font-extrabold text-3xl tracking-widest text-gray-700 mb-3  dark:text-gray-300">
               design
             </h1>
             <div className="flex flex-col lg:flex-row lg:space-x-12">
               <div className="flex-1">
-                <h2 className="font-extrabold text-xl tracking-widest text-gray-600 mb-3">
+                <h2 className="font-extrabold text-xl tracking-widest text-gray-600 mb-3 dark:text-gray-300">
                   low/high-fidelity
                 </h2>
-                <p className="text-gray-500 leading-loose tracking-wide mb-3">
+                <p className="text-gray-500 leading-loose tracking-wide mb-3 dark:text-gray-300 dark:text-gray-300">
                   After our user research, we initially laid out our
                   low-fidelity using Figma. We then allowed our users to
                   navigate our application in the low-fidelity state to get
@@ -175,10 +176,10 @@ function CookOff() {
                 </p>
               </div>
               <div className="flex-1">
-                <h2 className="font-extrabold text-xl tracking-widest text-gray-600 mb-3">
+                <h2 className="font-extrabold text-xl tracking-widest text-gray-600 mb-3 dark:text-gray-300">
                   user testing
                 </h2>
-                <p className="text-gray-500 leading-loose tracking-wide mb-3">
+                <p className="text-gray-500 leading-loose tracking-wide mb-3 dark:text-gray-300 ">
                   After our results from user testing, our main pain point that
                   we heard the most when talking to our users is the{" "}
                   <b>language used when navigating our application.</b> Some
@@ -200,15 +201,15 @@ function CookOff() {
         <section className="flex flex-col w-full lg:w-3/4 lg:flex-col">
           <Image img="cookoff/development.jpg"></Image>
           <div className="flex flex-col flex-1 mt-12 ">
-            <h1 className="font-extrabold text-3xl tracking-widest text-gray-700 mb-3 ">
+            <h1 className="font-extrabold text-3xl tracking-widest text-gray-700 mb-3 dark:text-gray-300">
               development
             </h1>
             <div className="flex flex-col lg:flex-row lg:space-x-12">
               <div className="flex-1">
-                <h2 className="font-extrabold text-xl tracking-widest text-gray-600 mb-3">
+                <h2 className="font-extrabold text-xl tracking-widest text-gray-600 mb-3 dark:text-gray-300">
                   front-end development
                 </h2>
-                <p className="text-gray-500 leading-loose tracking-wide mb-3">
+                <p className="text-gray-500 leading-loose tracking-wide mb-3 dark:text-gray-300">
                   Our front-end technology was founded by using React.js and
                   Storybook. As the lead front-end developer, we separated our
                   works by components and pages, then finally putting them
@@ -219,10 +220,10 @@ function CookOff() {
                 </p>
               </div>
               <div className="flex-1">
-                <h2 className="font-extrabold text-xl tracking-widest text-gray-600 mb-3">
+                <h2 className="font-extrabold text-xl tracking-widest text-gray-600 mb-3 dark:text-gray-300">
                   back-end development
                 </h2>
-                <p className="text-gray-500 leading-loose tracking-wide mb-3">
+                <p className="text-gray-500 leading-loose tracking-wide mb-3 dark:text-gray-300">
                   Our back-end development was covered using Strappi. Strappi
                   allows for a friendly UI when developing a database for
                   developers to easily understand what the database looks like
@@ -243,10 +244,10 @@ function CookOff() {
         <Divider />
         <section className="flex flex-col lg:space-x-12 w-full lg:w-3/4 lg:flex-col">
           <div>
-            <h1 className="font-extrabold text-3xl tracking-widest text-gray-700 mb-3 ">
+            <h1 className="font-extrabold text-3xl tracking-widest text-gray-700 mb-3 dark:text-gray-300">
               final takeaways
             </h1>
-            <p className="text-gray-500 leading-loose tracking-wide mb-3">
+            <p className="text-gray-500 leading-loose tracking-wide mb-3 dark:text-gray-300 ">
               This project was the biggest project I've tackled yet in the
               development world, as I was not only the lead front-end developer,
               but as well as the project manager. There were many times that I
@@ -256,10 +257,10 @@ function CookOff() {
               future.
             </p>
             <ol className="list-decimal mt-8">
-              <li className="font-extrabold text-xl tracking-widest text-gray-600 mb-3 ml-8">
+              <li className="font-extrabold text-xl tracking-widest text-gray-600 mb-3 ml-8 dark:text-gray-300">
                 Maintain a development document and follow
               </li>
-              <p className="text-gray-500 leading-loose tracking-wide mb-3">
+              <p className="text-gray-500 leading-loose tracking-wide mb-3 dark:text-gray-300">
                 There were many times where development became a struggle not
                 because the team didn't have the skills to accomplish the task,
                 but because the development process was not properly
@@ -271,10 +272,10 @@ function CookOff() {
                 sure the development process for the whole team becomes smooth
                 so the whole team is not lost on how to structure their code.
               </p>
-              <li className="font-extrabold text-xl tracking-widest text-gray-600 mb-3 ml-8">
+              <li className="font-extrabold text-xl tracking-widest text-gray-600 mb-3 ml-8 dark:text-gray-300">
                 Communication is key
               </li>
-              <p className="text-gray-500 leading-loose tracking-wide mb-3">
+              <p className="text-gray-500 leading-loose tracking-wide mb-3 dark:text-gray-300">
                 Communication was vital in this project, and even if I did
                 communicate through a messenging application, it would not be
                 always great for using as a project manager. Even if I used
@@ -283,10 +284,10 @@ function CookOff() {
                 the project starts is incredibly important to keep the project
                 run as smooth as possible.
               </p>
-              <li className="font-extrabold text-xl tracking-widest text-gray-600 mb-3 ml-8">
+              <li className="font-extrabold text-xl tracking-widest text-gray-600 mb-3 ml-8 dark:text-gray-300">
                 Create positive work environment
               </li>
-              <p className="text-gray-500 leading-loose tracking-wide mb-3">
+              <p className="text-gray-500 leading-loose tracking-wide mb-3 dark:text-gray-300">
                 This is one aspect that truly brought this project together in
                 the end. Although we did struggle multiple times during our
                 development and design process, we never made our environment a
