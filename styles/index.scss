@@ -8,6 +8,7 @@
 @font-face {
   font-family:'Metropolis';
   src:url('./fonts/Metropolis-Regular.woff');
+  font-display:swap;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
@@ -18,6 +19,11 @@ html {
 
 *{
   font-family: 'Manrope';  
+}
+
+main{
+  opacity: 1;
+  animation: load 1s ease-in-out;
 }
 
 .line{
@@ -117,10 +123,10 @@ h1, h2, h3, h4, h5, h6{
 
 @keyframes load {
   0% {
-    opacity: 1;
+    opacity: 0;
   }
   100% {
-    opacity: 0;
+    opacity: 1;
   }
 }
 

@@ -1,11 +1,19 @@
-import Nav from "../components/nav.js";
-import GradientCircle from "../components/gradientCircle.js";
-import Wave from "../components/wave.js";
-import Card from "../components/card.js";
-import ProjectCard from "../components/projectCard.js";
+import { motion } from "framer-motion";
+import Nav from "../components/Nav.js";
+import Footer from "../components/Footer";
+import GradientCircle from "../components/GradientCircle.js";
+import Wave from "../components/Wave.js";
+import Card from "../components/Card.js";
+import Image from "../components/Image";
+import ImageCard from "../components/ImageCard.js";
+import ProjectCard from "../components/ProjectCard.js";
+import DividerArrow from "../components/DividerArrow.js";
 import Head from "next/head";
+import BackgroundAnimation from "../components/BackgroundAnimation";
+import BackUp from "../components/BackUp";
 
 function Home() {
+
   return (
     <main className="w-screen ">
       <Head>
@@ -17,51 +25,24 @@ function Home() {
         ></meta>
       </Head>
       <Nav />
-      <div className="box">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
+
+      <BackgroundAnimation />
       <div className="flex items-center justify-center p-16">
         <GradientCircle>
           <h1 className="w-screen text-center text-3xl md:mb-4 md:text-5xl z-10 font-bold leading-normal tracking-widest dark:text-white">
             takuya toyokawa
           </h1>
           <h1 className="w-screen text-center text-3xl md:text-5xl z-10 tracking-widest text-gray-700 dark:text-gray-200">
-            front end developer
+            front end developer + UX/UI
           </h1>
         </GradientCircle>
       </div>
-      <div className="flex items-center">
-        <div className="line bg-gray-100" />
-        <svg
-          className="animate-pulse w-24 h-24 mx-24 border-gray-500 dark:border-white"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M19 9l-7 7-7-7"
-          ></path>
-        </svg>
-        <div className="line bg-gray-100" />
-      </div>
+      <DividerArrow />
       <section
         id="about"
         className="flex flex-col items-center justify-center text-center p-16 md:p-32"
       >
-        <h1 className="text-2xl font-bold tracking-wider my-8 dark:text-white">
+        <h1 className="text-2xl font-bold tracking-wider mb-8 dark:text-white">
           Hi, my name is Taku.
         </h1>
         <p className="text-m tracking-wider w-4/5 leading-loose md:w-2/4 dark:text-white">
@@ -127,7 +108,8 @@ function Home() {
             title="CookOff!"
             team={`Takuya Toyokawa (Lead Front-end Developer / Project Manager) \nAmina Ashour (UI/UX Designer) \nDmitry Matiouchenko (Full-Stack Developer) \nSimon Le (UI/UX Designer)`}
             desc="Our team created an web application for users trying to be able to cook together, not only to bring the joy of cooking together online, but improve upon what could be done with the concept of cooking food together. Using React.js and Strappi, we were able to build an application that allows users to share recipes, create events, and host their online events."
-            link="https://cookoff.live/profile"
+            link="/cookoff"
+            link2="View Project Process"
           ></ProjectCard>
           <ProjectCard
             className="z-10"
@@ -147,34 +129,107 @@ function Home() {
             desc="Our team was tasked to create an application based on real-world problems based on the environment. Our idea of creating an application to tell the expiration date of food came from the concept that many people waste food just because they don't know when common food expires. Using React.js, we were able to successfully develop the application."
             link="https://shelfie.vercel.app/Homepage"
           ></ProjectCard>{" "}
-          <p className="text-black dark:text-white">
-            more projects soon to be posted.
-          </p>
+          <h1 className="font-extrabold text-3xl tracking-widest text-gray-700 mb-6 ">
+            more projects
+          </h1>
+          <div className="w-3/4 grid grid-flow-row grid-cols-2 md:grid-cols-3 grid-rows-3 gap-4">
+            <ImageCard
+              img="salish.jpg"
+              href="http://salishairway.altervista.org/"
+            />
+            <ImageCard
+              img="sushime.jpg"
+              href="https://takuyaktoyokawa.github.io/sushimestyleguide/"
+            />
+          </div>
+
         </div>
       </section>
+
       <section
-        id="contact"
-        className="flex flex-col  items-center justify-center h-48 w-full text-center z-10 border-t-2 border-b-2 border-gray-200"
+        id="otherwork"
+        className="relative bottom-96 flex flex-col items-center justify-start w-full"
       >
-        <h1 className=" font-extrabold text-5xl mb-6 md:mb-12">Contact</h1>
-        <div className="flex flex-col md:flex-row md:space-x-12 ">
-          <a
-            className="transition text-blue-700 hover:text-blue-500"
-            href="https://www.linkedin.com/in/takuya-toyokawa-908795149/"
-          >
-            LinkedIn
-          </a>
-          <a className="transition text-blue-700 hover:text-blue-500">
-            Takuya.K.Toyokawa@gmail.com
-          </a>
-          <a
-            className="transition text-blue-700 hover:text-blue-500"
-            href="https://github.com/TakuyaKToyokawa"
-          >
-            GitHub
-          </a>
+        <Wave text="other work" id="otherwork" />
+        <div className="relative bottom-24 md:bottom-96 flex flex-col items-center justify-center">
+          <Card>
+            <div className=" flex flex-col-reverse lg:flex-row z-10 lg:space-x-12">
+              <div className="flex-1 mt-6">
+                <h1 className="font-extrabold text-3xl tracking-widest text-gray-700 mb-3 ">
+                  A Day in the Life of Animal Crossing
+                </h1>
+                <p className="mb-3 text-gray-700  tracking-wide">
+                  After Effects / Illustrator
+                </p>
+                <p className="text-gray-500 leading-loose tracking-wide">
+                  Using After Effects and Illustrator, I created a small
+                  animation based on the game called <i>Animal Crossing.</i> At
+                  the time of creation, the new game released by Nintendo called
+                  Animal Crossing: New Horizons launched, and on celebration I
+                  created a small animation based on the daily activities in the
+                  game.
+                  <br />
+                  <br />
+                  Some other smaller portions that attributed in the creation of
+                  the video is audio creation for some sound effects, which was
+                  recorded and created using Audacity.
+                </p>
+              </div>
+              <iframe
+                width="full"
+                height="400"
+                className="flex-1 rounded-xl"
+                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLoMwq4kX_LkqNAZHpyNHHgr8gzA2nkADp&rel=0"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </Card>
+          <Card>
+            <div className=" flex flex-col-reverse lg:flex-row z-10 lg:space-x-12">
+              <div className="flex-1 mt-6">
+                <h1 className="font-extrabold text-3xl tracking-widest text-gray-700 mb-3 ">
+                  Designer's Life
+                </h1>
+                <p className="mb-3 text-gray-700  tracking-wide">
+                  Premiere Pro / Audition
+                </p>
+                <p className="text-gray-500 leading-loose tracking-wide mb-6">
+                  Using a DSLR Camera, we recorded all our shots and took
+                  multiple shots to ensure we had the best shot when putting
+                  them all together. Once all the clips were recorded, we took
+                  the recordings to Premiere Pro to color correct the footage to
+                  fit the dark theme of the story. To finalize the project, we
+                  ensured the audio was at comfortable level with Adobe
+                  Audition.
+                </p>
+              </div>
+              <iframe
+                width="full"
+                height="400"
+                className="flex-1 rounded-xl"
+                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLoMwq4kX_LkrymCC54rcJRKylzXRsMUu8&rel=0"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </Card>
+          <div className="w-3/4 lg:w-1/2 h-96">
+            <h1 className="font-extrabold text-3xl tracking-widest text-gray-700 mb-3 text-center ">
+              Illustrator
+            </h1>
+            <Image height="600px" img="illustrator.jpg" />
+            <h1 className="font-extrabold text-3xl tracking-widest text-gray-700 mb-3  text-center">
+              Photoshop
+            </h1>
+            <Image height="800px" img="photoshop.jpg" />
+          </div>
         </div>
       </section>
+      <BackUp></BackUp>
+      <Footer></Footer>
     </main>
   );
 }
