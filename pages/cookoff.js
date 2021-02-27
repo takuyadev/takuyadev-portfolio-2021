@@ -74,7 +74,7 @@ function CookOff() {
         <DividerArrow />
         <section className="flex flex-col lg:space-x-12 lg:flex-row w-full lg:w-3/4 ">
           <div className="flex flex-col mb-3 flex-1 ">
-            <Image bgPosition="left" img="cookoff/problem.jpg"></Image>
+            <Image bgPosition="left" img="cookoff/problem.webp"></Image>
           </div>
           <div className="flex flex-col flex-1 lg:ml-12">
             <h1 className="font-extrabold text-3xl tracking-widest text-gray-700 mb-3 dark:text-gray-300">
@@ -129,7 +129,7 @@ function CookOff() {
           </div>
 
           <div className="flex flex-col mb-3 flex-1 ">
-            <Image img="cookoff/persona_1.jpg"></Image>
+            <Image img="cookoff/persona_1.webp"></Image>
           </div>
         </section>
         <Divider />
@@ -156,7 +156,7 @@ function CookOff() {
         </section>
         <Divider />
         <section className="flex flex-col w-full lg:w-3/4 lg:flex-col">
-          <Image img="cookoff/design.jpg"></Image>
+          <Image img="cookoff/design.webp"></Image>
           <div className="flex flex-col flex-1 mt-12 ">
             <h1 className="font-extrabold text-3xl tracking-widest text-gray-700 mb-3  dark:text-gray-300">
               design
@@ -199,7 +199,7 @@ function CookOff() {
         </section>
         <Divider />
         <section className="flex flex-col w-full lg:w-3/4 lg:flex-col">
-          <Image img="cookoff/development.jpg"></Image>
+          <Image img="cookoff/development.webp"></Image>
           <div className="flex flex-col flex-1 mt-12 ">
             <h1 className="font-extrabold text-3xl tracking-widest text-gray-700 mb-3 dark:text-gray-300">
               development
