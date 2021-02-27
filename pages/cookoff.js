@@ -13,7 +13,7 @@ function CookOff() {
       <Head>
         <title>Takuya Toyokawa</title>
         <link rel="shortcut icon" href="/static/favicon.ico" />
-        <link rel="preload"/>
+        <link rel="preload" />
         <meta
           name="description"
           content="Takuya Toyokawa's Front-end Developer's portfolio based in Canada"
@@ -23,7 +23,7 @@ function CookOff() {
       <BackUp />
       <BackgroundAnimation />
       <div className="flex flex-col items-center justify-center p-16">
-        <img className="h-96 w-auto mb-24 " src="project_1.png" />
+        <img className="h-96 w-auto mb-24 " src="project_1.webp" />
         <section className="flex flex-col w-full lg:w-3/4 ">
           <h1 className="font-extrabold text-3xl tracking-widest text-gray-700 mb-3 dark:text-gray-200">
             CookOff!
@@ -302,6 +302,10 @@ function CookOff() {
         </section>
       </div>
       <Footer />
+      <script
+        type="module"
+        src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@0.6.2/lite-youtube.js"
+      ></script>
     </main>
   );
 }

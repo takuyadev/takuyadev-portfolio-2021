@@ -28,7 +28,7 @@ function Home() {
       <BackgroundAnimation />
       <div className="flex items-center justify-center p-16">
         <section className="flex justify-center rounded-t  h-48  text-center z-10 w-full ">
-          <div className="flex flex-col items-center justify-center bg-white rounded-t-xl shadow-md border-gray-500 w-3/4">
+          <div className="flex flex-col items-center justify-center bg-white rounded-xl shadow-md border-gray-500 w-3/4">
             <p className="mb-12 tracking-widest text-gray-500">contact me through any of these platforms!</p>
             <div className="flex flex-row items-center justify-center w-full space-x-16 md:space-x-36 md:w-3/4">
               <a

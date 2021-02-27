@@ -8,10 +8,10 @@
   },
   "dependencies": {
     "framer-motion": "^3.7.0",
-    "next": "latest",
-    "react": "^16.13.1",
+    "next": "^10.0.7",
+    "react": "^17.0.1",
     "react-dom": "^16.13.1",
-    "react-lite-youtube-embed": "^0.4.3",
+    "react-lite-youtube-embed": "github:elbotho/react-lite-youtube-embed#fix-for-nextjs",
     "sass": "^1.32.4",
     "styled-components": "^5.2.1"
   },

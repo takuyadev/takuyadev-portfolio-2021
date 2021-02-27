@@ -58,7 +58,7 @@ export default function Nav() {
           <a href="/">
             <img
               className="w-16 h-16transition hover:scale-50"
-              src="/logo.png"
+              src="/logo.webp"
             />
           </a>
         </li>

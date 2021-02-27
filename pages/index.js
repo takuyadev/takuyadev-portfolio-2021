@@ -1,6 +1,4 @@
 import React from "react";
-import { render } from "react-dom";
-import { LiteYouTubeEmbed } from "react-lite-youtube-embed";
 import Nav from "../components/Nav.js";
 import Footer from "../components/Footer";
 import GradientCircle from "../components/GradientCircle.js";
@@ -34,7 +32,7 @@ function Home() {
           <h1 className="w-screen text-center text-3xl md:mb-4 md:text-5xl z-10 font-bold leading-normal tracking-widest dark:text-white">
             takuya toyokawa
           </h1>
-          <h1 className="w-screen text-center text-3xl md:text-5xl z-10 tracking-widest text-gray-700 ">
+          <h1 className="w-screen text-center text-3xl md:text-5xl z-10 tracking-widest text-gray-700 dark:text-gray-200">
             front end developer + UX/UI
           </h1>
         </GradientCircle>
@@ -90,9 +88,9 @@ function Home() {
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
             d="M19 9l-7 7-7-7"
           ></path>
         </svg>
@@ -105,7 +103,7 @@ function Home() {
         <div className="flex flex-col items-center justify-center w-full relative bottom-24 z-10 md:bottom-96">
           <ProjectCard
             className="z-10"
-            img="project_1.png"
+            img="project_1.webp"
             role="lead front-end developer / project manager"
             title="CookOff!"
             team={`Takuya Toyokawa (Lead Front-end Developer / Project Manager) \nAmina Ashour (UI/UX Designer) \nDmitry Matiouchenko (Full-Stack Developer) \nSimon Le (UI/UX Designer)`}
@@ -115,7 +113,7 @@ function Home() {
           ></ProjectCard>
           <ProjectCard
             className="z-10"
-            img="project_3.png"
+            img="project_3.webp"
             role="lead front-end developer / UX/UI designer"
             title="Logee"
             team={`Takuya Toyokawa (Lead Front-end Developer / UI/UX Designer) \nEmma Parsons (UI/UX Designer / Front-end Developer) \nSimon Le (UI/UX Designer / Front-end Developer / Illustrator)`}
@@ -124,14 +122,14 @@ function Home() {
           ></ProjectCard>
           <ProjectCard
             className="z-10"
-            img="project_2.png"
+            img="project_2.webp"
             role="lead front-end developer / UX/UI designer"
             title="Shelfie"
             team={`Takuya Toyokawa (Lead Front-end Developer / UI/UX Designer) \nEmma Parsons (UI/UX Designer / Front-end Developer) \nSimon Le (UI/UX Designer / Front-end Developer)`}
             desc="Our team was tasked to create an application based on real-world problems based on the environment. Our idea of creating an application to tell the expiration date of food came from the concept that many people waste food just because they don't know when common food expires. Using React.js, we were able to successfully develop the application."
             link="https://shelfie.vercel.app/Homepage"
           ></ProjectCard>{" "}
-          <h1 className="font-extrabold text-3xl tracking-widest text-gray-700 mb-6 ">
+          <h1 className="font-extrabold text-3xl tracking-widest text-gray-700 mb-6 dark:text-gray-200">
             more projects
           </h1>
           <div className="w-3/4 grid grid-flow-row grid-cols-2 md:grid-cols-3 grid-rows-3 gap-4">
@@ -181,9 +179,9 @@ function Home() {
                 height="400"
                 className="flex-1 rounded-xl"
                 src="https://www.youtube-nocookie.com/embed/videoseries?list=PLoMwq4kX_LkqNAZHpyNHHgr8gzA2nkADp&rel=0"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen="allowfullscreen"
+                allowFullscreen="allowfullscreen"
                 mozallowfullscreen="mozallowfullscreen"
                 msallowfullscreen="msallowfullscreen"
                 oallowfullscreen="oallowfullscreen"
@@ -210,21 +208,31 @@ function Home() {
                   Audition.
                 </p>
               </div>
-              <LiteYouTubeEmbed
-                id="L2vS_050c-M"
-                title="What’s new in Material Design for the web (Chrome Dev Summit 2019)"
-              />
+
+              <iframe
+                width="full"
+                height="400"
+                className="flex-1 rounded-xl"
+                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLoMwq4kX_LkrymCC54rcJRKylzXRsMUu8&rel=0"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullscreen="allowfullscreen"
+                mozallowfullscreen="mozallowfullscreen"
+                msallowfullscreen="msallowfullscreen"
+                oallowfullscreen="oallowfullscreen"
+                webkitallowfullscreen="webkitallowfullscreen"
+              ></iframe>
             </div>
           </Card>
           <div className="w-3/4 lg:w-1/2 h-96">
             <h1 className="font-extrabold text-3xl tracking-widest text-gray-700 mb-3 text-center  dark:text-gray-200">
               Illustrator
             </h1>
-            <Image height="600px" img="illustrator.jpg" />
+            <Image height="600px" img="illustrator.webp" />
             <h1 className="font-extrabold text-3xl tracking-widest text-gray-700 mb-3 text-center dark:text-gray-200">
               Photoshop
             </h1>
-            <Image height="800px" img="photoshop.jpg" />
+            <Image height="800px" img="photoshop.webp" />
           </div>
         </div>
       </section>
