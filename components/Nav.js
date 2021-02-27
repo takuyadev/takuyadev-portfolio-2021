@@ -34,6 +34,9 @@ const SideMenu = styled.ul`
     @media (prefers-color-scheme: dark) {
       background-color: rgba(17, 24, 39, 1);
     }
+    @media (prefers-color-scheme: light) {
+      background-color: white;
+    }
   }
 `;
 
@@ -53,7 +56,7 @@ export default function Nav() {
 
   return (
     <nav className="m-8">
-      <ul className="flex flex-wrap flex-col lg:flex-row items-center justify-between md:h-auto bg-gray-900">
+      <ul className="flex flex-wrap flex-col lg:flex-row items-center justify-between md:h-auto ">
         <li className="rounded-full mb-6 bg-white p-4 lg:m-0 ">
           <a href="/">
             <img
