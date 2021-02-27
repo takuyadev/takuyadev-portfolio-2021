@@ -44,10 +44,10 @@ function CookOff() {
                 cook-off.
               </p>
               <a
-                href=""
-                className="flex justify-center no-underline w-48 btn-blue rounded-full transition pointer-cursor hover:bg-blue-700"
+                href="/cookoff"
+                className="flex justify-center no-underline w-48 btn-gray-400 rounded-full transition pointer-cursor"
               >
-                View Application
+                Back-end currently down
               </a>
             </div>
             <div className="flex flex-col flex-1 ">
