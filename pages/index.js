@@ -177,6 +177,7 @@ function Home() {
               <iframe
                 width="full"
                 height="400"
+                loading="lazy"
                 className="flex-1 rounded-xl"
                 src="https://www.youtube-nocookie.com/embed/videoseries?list=PLoMwq4kX_LkqNAZHpyNHHgr8gzA2nkADp&rel=0"
                 frameBorder="0"
@@ -212,6 +213,7 @@ function Home() {
               <iframe
                 width="full"
                 height="400"
+                loading="lazy"
                 className="flex-1 rounded-xl"
                 src="https://www.youtube-nocookie.com/embed/videoseries?list=PLoMwq4kX_LkrymCC54rcJRKylzXRsMUu8&rel=0"
                 frameBorder="0"
