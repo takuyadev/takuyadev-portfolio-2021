@@ -118,7 +118,7 @@ function Home() {
             title="Logee"
             team={`Takuya Toyokawa (Lead Front-end Developer / UI/UX Designer) \nEmma Parsons (UI/UX Designer / Front-end Developer) \nSimon Le (UI/UX Designer / Front-end Developer / Illustrator)`}
             desc="Our team was tasked to create an application was to not only teach users what inductive and deductive reasoning was, but also to the age demographic of 8-12. Since it was a younger demographic, we had to make it welcoming for younger kids with attracting visuals. This web application was created using HTML/CSS/JS."
-            link="https://takuyaktoyokawa.github.io/logeee/"
+            link="takuyadev.github.io/logeee/"
           ></ProjectCard>
           <ProjectCard
             className="z-10"
@@ -139,7 +139,7 @@ function Home() {
             />
             <ImageCard
               img="sushime.jpg"
-              href="https://takuyaktoyokawa.github.io/sushimestyleguide/"
+              href="https://takuyadev.github.io/sushime-styleguide/"
             />
           </div>
         </div>
